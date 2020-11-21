@@ -6,7 +6,6 @@ import { useNavigation } from '@react-navigation/native';
 import { colorTheme, responsiveFont } from '../../../Util';
 import { TextInput } from 'react-native-gesture-handler';
 
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const LoginScreen = () => {
   const navigation = useNavigation();

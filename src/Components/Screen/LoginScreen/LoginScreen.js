@@ -13,11 +13,11 @@ const LoginScreen = () => {
   return (
     <View style={styles.container}>
     
-      <View style={{flex:2, justifyContent:'center', alignItems:'center'}}>
+      <View style={styles.titleIcon}>
         <Image 
         source={{uri:'https://img.icons8.com/dusk/64/000000/donate.png'}}
         style={{width:100, height:100}}/>
-          <Text style={{color:colorTheme.primaryColor, fontWeight:'bold', fontSize:responsiveFont(18)}}>Rongsokin</Text>
+          <Text style={styles.textIcon}>Rongsokin</Text>
       </View>
       <View style={{flex:1, backgroundColor:colorTheme.primaryColor, padding:15, marginTop:10}}>
         <Text style={{color:'#fff', fontSize:responsiveFont(20), fontWeight:'bold'}}>Selamat Datang !</Text>

@@ -3,6 +3,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  titleIcon:{flex:2, justifyContent:'center', alignItems:'center'},
+  textIcon:{color:colorTheme.primaryColor, fontWeight:'bold', fontSize:responsiveFont(18)},
   searchSection: {
     flex: 1,
     flexDirection: 'row',

@@ -1,76 +1,39 @@
-import HomeScreen from '@screen/HomeScreen';
-
 export const MainMenu = [
   {
-    name: 'Buatan\nIndonesia',
-    label: 'BuatanIndonesia',
+    name: 'Jual',
+    label: 'Jual',
     icon: 'material-design',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=1',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    wallet:'Dopoint',
+    credit:'4500',
+    category:'Kertas',
+    weight:'5 Kg',
+    image: 'https://img.icons8.com/cute-clipart/64/000000/money.png',
+    color:'#f7d825',
+    rank:'John Doe'
   },
   {
-    name: 'Lihat Semua',
-    label: 'Lihat Semua',
+    name: 'Donasi',
+    color:'#3CB371',
+    label: 'Donasi',
+    wallet:'Ropay',
+    category:'Plastik',
+    credit:'450.000',
+    weight:'14 Kg',
     icon: 'collapse-all',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=2',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    image: 'https://img.icons8.com/fluent/48/000000/sell.png',
+    rank:'Jane Doe'
   },
   {
-    name: 'Top-Up &\nTagihan',
-    label: 'BuatanIndonesia2',
+    name: 'Lelang',
+    color:'#368deb',
+    label: 'Lelang',
+    wallet:'Ropoint',
+    category:'Kaca',
+    weight:'25 Kg',
+    credit:'4500',
     icon: 'format-vertical-align-top',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=3',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    image: 'https://img.icons8.com/fluent/48/000000/auction.png',
+    rank:'Frank Sinatra'
   },
-  {
-    name: 'Keuangan',
-    label: 'BuatanIndonesia3',
-    icon: 'contactless-payment-circle',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=4',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
-  {
-    name: 'Tokopedia\n Salam',
-    label: 'BuatanIndonesia4',
-    icon: 'nature-people',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=5',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
-  {
-    name: 'Pulsa',
-    label: 'BuatanIndonesia4',
-    icon: 'cellphone',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=6',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
-  {
-    name: 'E-Money',
-    label: 'BuatanIndonesia4',
-    icon: 'contactless-payment-circle-outline',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=7',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
-  {
-    name: 'Semua\nPromo',
-    label: 'BuatanIndonesia4',
-    icon: 'approximately-equal',
-    component: HomeScreen,
-    image: 'https://picsum.photos/500?random=8',
-    info:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-  },
+  
 ];

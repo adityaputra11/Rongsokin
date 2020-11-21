@@ -4,8 +4,10 @@ import styles from './styles';
 import {MainMenu} from '@data';
 import Ripple from 'react-native-material-ripple';
 import {useNavigation} from '@react-navigation/native';
+import AntDesign  from 'react-native-vector-icons/AntDesign';
+import Foundation  from 'react-native-vector-icons/Foundation';
 
-const Discount = (props) => {
+const Reward = (props) => {
   const navigation = useNavigation();
   const [menu, setMenu] = useState(MainMenu);
   
@@ -30,22 +32,12 @@ const Discount = (props) => {
     navigation.navigate('FeedScreen');
   };
   const renderItem = ({item, index}) => {
-    const slideItem = index===1?styles.sliderItemsBigger:styles.sliderItems
     return (
-      <Ripple style={{...slideItem, backgroundColor:item.color}} onPress={() => onPressDetail(item)}>
-          <View style={styles.justRowContainer}>
-            <View>
-         <Text style={styles.title}>Rongsokin</Text>
-            <View style={{...styles.justRow, marginTop:10}}>
-              <Text style={styles.titleSec}>Penjualan Rongsok</Text>
-              <Text style={styles.titleSub}>{item.category}</Text>
-            </View>
-          <Text style={styles.titleBig}>{item.weight}</Text>
-         </View>
-         <View>
-         <Image source={{uri:item.image}} style={styles.img}/>
-         </View>
-         </View>
+      <Ripple  onPress={() => onPressDetail(item)}>
+        <Image source={require('../../../Assets/images/banner.png')} style={styles.sliderItems}/>
+        <View style={{backgroundColor:'#ffdd61',borderRadius:5, position:'absolute', right:20, top:10, padding:5,}}>
+          <Text style={{color:'#fff'}}>100 Points</Text>
+        </View>
       </Ripple>
     );
   };
@@ -59,10 +51,10 @@ const Discount = (props) => {
     <View style={styles.container}>
       <View style={styles.rowTitle}>
         <Text style={styles.titlePri}>{props.title}</Text>
+        <Text style={styles.titleGreen}>Lihat Semua</Text>
       </View>
       <FlatList
         keyExtractor={keyExtractor}
-        horizontal
         snapToAlignment={'start'}
         data={menu}
         renderItem={renderItem}
@@ -73,4 +65,4 @@ const Discount = (props) => {
   );
 };
 
-export default Discount;
+export default Reward;

@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     color:colorTheme.disableColor
   },
   titleSec: {
-    fontSize: responsiveFont(15),
+    fontSize: responsiveFont(12),
     color:colorTheme.secondaryColor
   },
   titleSub: {
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
     color: colorTheme.primaryColor,
     marginLeft: 10,
     marginBottom: 20,
+    marginRight:10,
   },
   subtitle: {
     fontSize: responsiveFont(10),
@@ -79,14 +80,16 @@ const styles = StyleSheet.create({
     alignItems:'center'
   },
   sliderItems: {
-    width: WIDTH * 0.8,
-    height: Dimensions.get('window').height * 0.14,
+    width: WIDTH * 0.9,
     borderRadius:10,
-    backgroundColor:colorTheme.primaryColor,
+    backgroundColor:'#7eb54e',
     marginHorizontal:7,
     marginBottom:5,
     padding:15,
-    alignSelf:'center'
+    alignSelf:'center',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    flex:1
   },
   sliderItemsBigger: {
     width: WIDTH * 0.8,

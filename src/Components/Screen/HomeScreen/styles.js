@@ -1,7 +1,9 @@
 import {StyleSheet} from 'react-native';
+import {responsiveFont, colorTheme} from '@util';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor:colorTheme.backgroundColor
   },
   position: {
     flex: 1,

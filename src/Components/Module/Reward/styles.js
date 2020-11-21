@@ -2,16 +2,6 @@ import {StyleSheet, Dimensions} from 'react-native';
 import {responsiveFont, colorTheme} from '@util';
 import { color } from 'react-native-reanimated';
 const WIDTH = Dimensions.get('window').width;
-const shadow ={
-  shadowColor:  colorTheme.disableColor,
-  shadowOffset: {
-    width: 0,
-    height: 3,
-  },
-  shadowOpacity: 0.29,
-  shadowRadius: 4.65,
-  elevation: 7,
-}
 const styles = StyleSheet.create({
   container: {
     padding: 10,
@@ -38,46 +28,86 @@ const styles = StyleSheet.create({
     color: colorTheme.primaryColor,
     marginLeft: 10,
   },
-  title: {
-    fontSize: responsiveFont(15),
-    fontWeight: 'bold',
-    marginLeft: 10,
-    marginBottom: 10,
-    color:colorTheme.disableColor
+  img:{
+      width:50,
+      height:50,
   },
-  titleGreen: {
+  title: {
     fontSize: responsiveFont(13),
     fontWeight: 'bold',
-    marginTop:5,
+    color:colorTheme.secondaryColor
+  },
+  titleBig: {
+    fontSize: responsiveFont(17),
+    fontWeight: 'bold',
+    color:colorTheme.secondaryColor
+  },
+  titlePri: {
+    fontSize: responsiveFont(15),
+    fontWeight: 'bold',
+    marginBottom:10,
+    marginLeft:10,
+    color:colorTheme.disableColor
+  },
+  titleSec: {
+    fontSize: responsiveFont(12),
+    color:colorTheme.secondaryColor
+  },
+  titleSub: {
+    fontSize: responsiveFont(15),
+    fontWeight: 'bold',
+    color:colorTheme.secondaryColor,
+    marginLeft:5,
+  },
+  titleGreen: {
+    fontSize: responsiveFont(11),
+    fontWeight: 'bold',
     color: colorTheme.primaryColor,
+    marginLeft: 10,
+    marginBottom: 20,
+    marginRight:10,
   },
   subtitle: {
     fontSize: responsiveFont(10),
     marginLeft: 10,
   },
-  item: {
-    width: WIDTH * 0.23,
-    height: WIDTH * 0.23,
-    marginHorizontal:17,
-    backgroundColor:'#fff',
-    borderRadius:10,
-    ...shadow,
-    justifyContent:'center',
-    alignItems:'center',
-    alignSelf:'center',
-    marginBottom:5
+  justRow:{
+    flexDirection:'row',
   },
-  itemBigger: {
-    width: WIDTH * 0.27,
-    height: WIDTH * 0.27,
-    marginHorizontal:12,
-    backgroundColor:'#fff',
+  justRowContainer:{
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center'
+  },
+  sliderItems: {
+    width: WIDTH * 0.9,
+    height: WIDTH *0.3,
     borderRadius:10,
-    ...shadow,
-    justifyContent:'center',
-    alignItems:'center',
+    marginBottom:10,
     alignSelf:'center',
-    marginBottom:5
+  },
+  sliderItemsBigger: {
+    width: WIDTH * 0.8,
+    height: Dimensions.get('window').height * 0.16,
+    borderRadius:10,
+    backgroundColor:colorTheme.primaryColor,
+    marginHorizontal:7,
+    marginBottom:5,
+    padding:15,
+    alignSelf:'center'
+  },
+  item: {
+    margin: 5,
+    paddingBottom: 5,
+    borderWidth: 0.5,
+    borderColor: '#ccc',
+    width: WIDTH * 0.33,
+    borderRadius: 6,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.2,
+    shadowRadius: 2,
+    elevation: 3,
   },
   itemPrice: {
     padding: 10,
@@ -98,10 +128,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginRight: 5,
   },
-  img:{
-    width:50,
-    height:50
-  }
 });
 
 export default styles;

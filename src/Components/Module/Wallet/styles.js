@@ -14,7 +14,7 @@ const shadow ={
 }
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    padding: 0,
   },
   font: {
     fontSize: responsiveFont(9.5),
@@ -46,39 +46,29 @@ const styles = StyleSheet.create({
     color:colorTheme.disableColor
   },
   titleGreen: {
+    fontSize: responsiveFont(10),
+    color: colorTheme.disableColor,
+  },
+  titleGreenSm: {
     fontSize: responsiveFont(13),
     fontWeight: 'bold',
     marginTop:5,
-    color: colorTheme.primaryColor,
+    color: colorTheme.disableColor,
   },
   subtitle: {
     fontSize: responsiveFont(10),
-    marginLeft: 10,
   },
   item: {
-    width: WIDTH * 0.23,
-    height: WIDTH * 0.23,
-    marginHorizontal:17,
-    backgroundColor:'#fff',
-    borderRadius:10,
-    ...shadow,
-    justifyContent:'center',
-    alignItems:'center',
-    alignSelf:'center',
-    marginBottom:5
+    width: WIDTH * 0.331,
+    height: WIDTH * 0.25,
+    borderRightWidth:2,
+    backgroundColor:colorTheme.secondaryColor,
+    borderBottomWidth:4,
+    padding:10,
+    borderBottomColor:'#dcdfe3',
+    borderRightColor:'#dcdfe3',
   },
-  itemBigger: {
-    width: WIDTH * 0.27,
-    height: WIDTH * 0.27,
-    marginHorizontal:12,
-    backgroundColor:'#fff',
-    borderRadius:10,
-    ...shadow,
-    justifyContent:'center',
-    alignItems:'center',
-    alignSelf:'center',
-    marginBottom:5
-  },
+
   itemPrice: {
     padding: 10,
   },
@@ -99,8 +89,10 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   img:{
-    width:50,
-    height:50
+    width:25,
+    height:25,
+    alignSelf:'center',
+    margin:10,
   }
 });
 

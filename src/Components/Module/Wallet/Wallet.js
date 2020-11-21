@@ -5,9 +5,8 @@ import {MainMenu} from '@data';
 import Ripple from 'react-native-material-ripple';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Fontisto';
-import LinearGradient from 'react-native-linear-gradient';
 
-const Category = (props) => {
+const Wallet = (props) => {
   const navigation = useNavigation();
   const [menu, setMenu] = useState(MainMenu);
   
@@ -23,12 +22,16 @@ const Category = (props) => {
   const renderItem = ({item, index}) => {
     return (
       <Ripple onPress={() => onPressDetail(item)}>
-      <LinearGradient colors={['#3CB371','#3CB371', '#7eb54e']} style={styles.item}  start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}>
-        <View style={{backgroundColor:'#fff', padding:26, borderRadius:5,}}>
-          <Image source={{uri:item.image}} style={styles.img}/>
-         </View>
-        <Text style={{color:'#fff', marginTop:5,}}>{item.category} ></Text>
-      </LinearGradient>
+      <View style={styles.item} >
+         <Image source={{uri:item.image}} style={styles.img}/>
+         <View style={{flexDirection:'row',justifyContent:'space-between'}}>
+         <View>
+            <Text style={styles.titleGreen}>{item.wallet}</Text>
+            <Text style={styles.titleGreenSm}>{item.credit}</Text>
+          </View>
+          <Image source={{uri:item.image}} style={{width:15,height:15, alignSelf:'center'}}/>
+          </View>
+      </View>
       </Ripple>
     );
   };
@@ -38,9 +41,6 @@ const Category = (props) => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.rowTitle}>
-        <Text style={styles.titlePri}>{props.title}</Text>
-      </View>
       <FlatList
         keyExtractor={keyExtractor}
         horizontal
@@ -54,4 +54,4 @@ const Category = (props) => {
   );
 };
 
-export default Category;
+export default Wallet;

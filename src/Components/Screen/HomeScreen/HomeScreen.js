@@ -4,10 +4,14 @@ import styles from './styles';
 import Carousel from '@components/Module/Carousel';
 import HeaderSearch from '@components/Module/HeaderSearch';
 import Discount from '@components/Module/Discount';
+import Wallet from '@components/Module/Wallet';
+import Rank from '@components/Module/Rank';
+import Category from '@components/Module/Category';
 import Menu from '@components/Module/Menu';
 import {ScrollView} from 'react-native-gesture-handler';
 import {StatusBar} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
+import Reward from '@components/Module/Reward';
 
 const HomeScreen = () => {
   const [headerScroll, setHeaderScroll] = useState(0);
@@ -31,8 +35,12 @@ const HomeScreen = () => {
         }}
         style={styles.position}>
         <Carousel key={'carousel'} />
-        <Menu key={'promo'} title={'Terlaris Untukmu'} />
-        <Discount key={'product'} title={'Produk Terbaru'} />
+        <Wallet/>
+        <Menu key={'promo'} title={'Mulai Aksimu'} />
+        <Discount key={'product'} title={'Penjualanmu'} />
+        <Category title={'Masukan Rongsokmu'} />
+        <Rank key={'rank'} title={'Peringkat Pendonasi'} />
+        <Reward key={'reward'} title={'Reward Saya'}/>
       </ScrollView>
     </View>
   );

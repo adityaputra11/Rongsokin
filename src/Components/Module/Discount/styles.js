@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
   },
   sliderItems: {
     width: WIDTH * 0.8,
-    height: Dimensions.get('window').height * 0.14,
     borderRadius:10,
     backgroundColor:colorTheme.primaryColor,
     marginHorizontal:7,
@@ -90,12 +89,14 @@ const styles = StyleSheet.create({
   },
   sliderItemsBigger: {
     width: WIDTH * 0.8,
-    height: Dimensions.get('window').height * 0.16,
     borderRadius:10,
     backgroundColor:colorTheme.primaryColor,
     marginHorizontal:7,
     marginBottom:5,
-    padding:15,
+    paddingLeft:15,
+    paddingRight:15,
+    paddingTop:25,
+    paddingBottom:25,
     alignSelf:'center'
   },
   item: {

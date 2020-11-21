@@ -21,7 +21,7 @@ const Menu = (props) => {
   };
   const renderItem = ({item, index}) => {
     return (
-      <Ripple style={index===1?styles.itemBigger:styles.item} onPress={() => onPressDetail(item)}>
+      <Ripple style={index===1?styles.itemBigger:styles.item} onPress={null}>
          <Image source={{uri:item.image}} style={styles.img}/>
           <Text style={styles.titleGreen}>{item.label}</Text>
       </Ripple>

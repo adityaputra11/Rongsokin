@@ -22,7 +22,7 @@ const Category = (props) => {
   };
   const renderItem = ({item, index}) => {
     return (
-      <Ripple onPress={() => onPressDetail(item)}>
+      <Ripple onPress={null}>
       <LinearGradient colors={['#3CB371','#3CB371', '#7eb54e']} style={styles.item}  start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}>
         <View style={{backgroundColor:'#fff', padding:26, borderRadius:5,}}>
           <Image source={{uri:item.image}} style={styles.img}/>

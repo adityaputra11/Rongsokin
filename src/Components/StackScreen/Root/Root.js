@@ -5,11 +5,19 @@ import DetailScreen from '@screen/DetailScreen';
 import FeedScreen from '@screen/FeedScreen';
 import {colorTheme} from '@util/Theme';
 import SearchScreen from '@screen/SearchScreen';
+import LoginScreen from '@screen/LoginScreen';
 
 const Stack = createStackNavigator();
 const Root = () => {
   return (
     <Stack.Navigator>
+       <Stack.Screen
+        name="LoginRoot"
+        options={{
+          headerShown: false,
+        }}
+        component={LoginScreen}
+      />
       <Stack.Screen
         name="HomeRoot"
         options={{

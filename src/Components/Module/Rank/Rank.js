@@ -33,7 +33,7 @@ const Rank = (props) => {
   };
   const renderItem = ({item, index}) => {
     return (
-      <Ripple style={styles.sliderItems} onPress={() => onPressDetail(item)}>
+      <Ripple style={styles.sliderItems} onPress={null}>
         <Text style={{flex:3,...styles.titleSec}}>{index+1}. {item.rank}</Text>
         <View style={{flex:1}}>
           <Foundation name={'crown'} size={20} color={'#fff'}/>

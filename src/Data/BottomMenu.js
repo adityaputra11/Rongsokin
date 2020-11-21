@@ -9,16 +9,16 @@ import HeaderRoot from '@screen/HeaderRoot';
 export const BottomMenu = [
   {name: 'Home', label: 'Beranda', icon: 'home', component: HomeScreen},
   {
-    name: 'Feed',
+    name: 'Pesan',
     label: 'Pesan',
-    icon: 'signature-image',
+    icon: 'message-processing',
     component: OfficialStoreScreen,
   },
   {
-    name: 'OfficialStore',
+    name: 'Transaksi',
     label: 'Transaksi',
-    icon: 'store',
+    icon: 'sort-variant',
     component: OfficialStoreScreen,
   },
-  {name: 'Cart', label: 'Profil', icon: 'cart', component: CartScreen},
+  {name: 'Account', label: 'Profil', icon: 'account', component: CartScreen},
 ];

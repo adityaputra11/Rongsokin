@@ -21,7 +21,7 @@ const Wallet = (props) => {
   };
   const renderItem = ({item, index}) => {
     return (
-      <Ripple onPress={() => onPressDetail(item)}>
+      <Ripple onPress={null}>
       <View style={styles.item} >
          <Image source={{uri:item.walletIcon}} style={styles.img}/>
          <View style={{flexDirection:'row',justifyContent:'space-between'}}>

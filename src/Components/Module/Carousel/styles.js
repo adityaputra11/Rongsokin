@@ -11,12 +11,12 @@ const styles = StyleSheet.create({
     justifyContent:'flex-end'
   },
   textHead:{
-    fontSize: responsiveFont(12),
+    fontSize: responsiveFont(11),
     fontWeight:'bold',
     color:colorTheme.secondaryColor,
   },
   textSub:{
-    fontSize: responsiveFont(10),
+    fontSize: responsiveFont(9),
     color:colorTheme.alternateColor,
   },
   overlay:{

@@ -32,9 +32,9 @@ const Discount = (props) => {
   const renderItem = ({item, index}) => {
     const slideItem = index===1?styles.sliderItemsBigger:styles.sliderItems
     return (
-      <Ripple style={{...slideItem, backgroundColor:item.color}} onPress={() => onPressDetail(item)}>
+      <Ripple style={{...slideItem, backgroundColor:item.color}} onPress={null}>
           <View style={styles.justRowContainer}>
-            <View>
+        <View>
          <Text style={styles.title}>Rongsokin</Text>
             <View style={{...styles.justRow, marginTop:10}}>
               <Text style={styles.titleSec}>Penjualan Rongsok</Text>

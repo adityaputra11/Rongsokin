@@ -50,7 +50,7 @@ const HeaderSearch = (props) => {
           </Ripple>
           </View>
          
-          <Ripple style={styles.padding} onPress={onPressFav}>
+          <Ripple style={styles.padding} onPress={null}>
             <FontAwesome
               name={'bell'}
               color={'#fff'}

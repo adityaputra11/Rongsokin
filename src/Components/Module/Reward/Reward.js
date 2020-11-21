@@ -33,7 +33,7 @@ const Reward = (props) => {
   };
   const renderItem = ({item, index}) => {
     return (
-      <Ripple  onPress={() => onPressDetail(item)}>
+      <Ripple  onPress={null}>
         <Image source={require('../../../Assets/images/banner.png')} style={styles.sliderItems}/>
         <View style={{backgroundColor:'#ffdd61',borderRadius:5, position:'absolute', right:20, top:10, padding:5,}}>
           <Text style={{color:'#fff'}}>100 Points</Text>

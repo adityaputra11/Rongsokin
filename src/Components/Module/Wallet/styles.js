@@ -65,8 +65,8 @@ const styles = StyleSheet.create({
     backgroundColor:colorTheme.secondaryColor,
     borderBottomWidth:4,
     padding:10,
-    borderBottomColor:'#dcdfe3',
-    borderRightColor:'#dcdfe3',
+    borderBottomColor:'#f5f3df',
+    borderRightColor:'#e3e1d1',
   },
 
   itemPrice: {
@@ -89,10 +89,10 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   img:{
-    width:25,
-    height:25,
+    width:30,
+    height:30,
     alignSelf:'center',
-    margin:10,
+    margin:5,
   }
 });
 

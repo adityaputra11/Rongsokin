@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Ripple from 'react-native-material-ripple';
@@ -31,7 +32,7 @@ const HeaderSearch = (props) => {
             <View style={styles.justRow}>
               <Text style={styles.smfont}>Lokasi anda</Text>
               <AntDesign
-                name={'search1'}
+                name={'down'}
                 color={'#fff'}
                 size={10}
               />
@@ -39,8 +40,8 @@ const HeaderSearch = (props) => {
           </Ripple>
           <Ripple style={styles.input} onPress={onPressFav}>
             <View style={styles.justRow}>
-              <AntDesign
-                name={'search1'}
+              <Entypo
+                name={'location-pin'}
                 color={'#fff'}
                 size={20}
               />
@@ -55,6 +56,7 @@ const HeaderSearch = (props) => {
               color={'#fff'}
               size={25}
             />
+            <View style={styles.notif}/>
           </Ripple>
         </View>
       </View>

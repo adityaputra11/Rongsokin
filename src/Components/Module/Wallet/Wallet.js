@@ -4,7 +4,7 @@ import styles from './styles';
 import {MainMenu} from '@data';
 import Ripple from 'react-native-material-ripple';
 import {useNavigation} from '@react-navigation/native';
-import Icon from 'react-native-vector-icons/Fontisto';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 const Wallet = (props) => {
   const navigation = useNavigation();
@@ -23,13 +23,13 @@ const Wallet = (props) => {
     return (
       <Ripple onPress={() => onPressDetail(item)}>
       <View style={styles.item} >
-         <Image source={{uri:item.image}} style={styles.img}/>
+         <Image source={{uri:item.walletIcon}} style={styles.img}/>
          <View style={{flexDirection:'row',justifyContent:'space-between'}}>
          <View>
             <Text style={styles.titleGreen}>{item.wallet}</Text>
             <Text style={styles.titleGreenSm}>{item.credit}</Text>
           </View>
-          <Image source={{uri:item.image}} style={{width:15,height:15, alignSelf:'center'}}/>
+            <Entypo name={"squared-plus"} color={"#f5d418"} size={15}/>
           </View>
       </View>
       </Ripple>

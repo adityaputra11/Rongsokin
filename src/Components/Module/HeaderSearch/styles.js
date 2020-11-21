@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   item: {
     marginHorizontal: 10,
   },
+  notif:{width:10, height:10, borderRadius:100, backgroundColor:'red', position:'absolute', top:0, right:0}
 });
 
 export default styles;

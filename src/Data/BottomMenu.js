@@ -12,7 +12,7 @@ export const BottomMenu = [
     name: 'Feed',
     label: 'Pesan',
     icon: 'signature-image',
-    component: HeaderRoot,
+    component: OfficialStoreScreen,
   },
   {
     name: 'OfficialStore',
